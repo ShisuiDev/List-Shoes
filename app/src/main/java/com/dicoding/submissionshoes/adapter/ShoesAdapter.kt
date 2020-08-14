@@ -17,6 +17,7 @@ class ShoesAdapter(
     private var listener: (Shoes) -> Unit
 ) : RecyclerView.Adapter<ShoesAdapter.ViewHolder>() {
 
+    // this place code to implement tour logic
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvName: TextView = view.findViewById(R.id.tv_name)
         private val tvPrice: TextView = view.findViewById(R.id.tv_price)
@@ -39,16 +40,19 @@ class ShoesAdapter(
         }
     }
 
+    //this code to use inflate your row_shoes.xml
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShoesAdapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val inflatedView = layoutInflater.inflate(R.layout.row_shoes, parent, false)
         return ViewHolder(inflatedView)
     }
 
+    // this code to use implement long of data
     override fun getItemCount(): Int {
         return listData.size
     }
 
+    // this code to bind the logic code to viewHolder
     override fun onBindViewHolder(holder: ShoesAdapter.ViewHolder, position: Int) {
         holder.bindItem(listData[position], listener, context)
     }

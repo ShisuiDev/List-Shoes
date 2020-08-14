@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
 
+//    for get the data from home activity
     companion object {
         private const val EXTRA_NAME = "name"
         private const val EXTRA_IMAGE = "image"
@@ -35,6 +36,7 @@ class DetailActivity : AppCompatActivity() {
             .into(shoes_image)
     }
 
+//    use the back button from this code
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true

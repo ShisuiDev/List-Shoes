@@ -18,11 +18,13 @@ class HomeActivity : AppCompatActivity() {
 
     @SuppressLint("Recycle")
     private fun initData() {
+//        get the data from string.xml
         val name = resources.getStringArray(R.array.shoes_name)
         val image = resources.obtainTypedArray(R.array.shoes_image)
         val price = resources.getStringArray(R.array.shoes_price)
         val size = resources.getStringArray(R.array.shoes_size)
 
+//        looping the data
         items.clear()
         for (i in name.indices) {
             items.add(
@@ -48,6 +50,7 @@ class HomeActivity : AppCompatActivity() {
 
         rv_shoes.setHasFixedSize(true)
         initData()
+//        implement the recyclerview in this layout
         rv_shoes.layoutManager = LinearLayoutManager(this)
         rv_shoes.adapter = ShoesAdapter(context = this, listData = items) {
             val intent = Intent(this@HomeActivity,DetailActivity::class.java)
