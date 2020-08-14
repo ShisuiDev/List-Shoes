@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">SubmissionShoes</string>
+
+    <string-array name="shoes_name">
+        <item>Nike</item>
+        <item>Brogue</item>
+        <item>Derby</item>
+        <item>Boots</item>
+        <item>Slip-On</item>
+        <item>Sneakers</item>
+        <item>Gladiator</item>
+        <item>Cat</item>
+        <item>Polo</item>
+        <item>Adidas</item>
+    </string-array>
+
+    <array name="shoes_image">
+        <item>@drawable/satu</item>
+        <item>@drawable/dua</item>
+        <item>@drawable/tiga</item>
+        <item>@drawable/empat</item>
+        <item>@drawable/lima</item>
+        <item>@drawable/enam</item>
+        <item>@drawable/tujuh</item>
+        <item>@drawable/delapan</item>
+        <item>@drawable/sembilan</item>
+        <item>@drawable/sepuluh</item>
+    </array>
+
+    <string-array name="shoes_size">
+        <item>43</item>
+        <item>38</item>
+        <item>42</item>
+        <item>41</item>
+        <item>40</item>
+        <item>39</item>
+        <item>44</item>
+        <item>43</item>
+        <item>42</item>
+        <item>40</item>
+    </string-array>
+
+    <string-array name="shoes_price">
+        <item>IDR 140.000</item>
+        <item>IDR 100.000</item>
+        <item>IDR 120.000</item>
+        <item>IDR 110.000</item>
+        <item>IDR 130.000</item>
+        <item>IDR 200.000</item>
+        <item>IDR 250.000</item>
+        <item>IDR 300.000</item>
+        <item>IDR 140.000</item>
+        <item>IDR 180.000</item>
+    </string-array>
+    <string name="id">ID</string>
+</resources>
